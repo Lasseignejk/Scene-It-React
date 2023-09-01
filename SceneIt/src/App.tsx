@@ -5,7 +5,7 @@ import SearchBar from './components/SearchBar';
 import {movieData} from './movies.ts'
 
 function App() {
-  const [movies, setMovies] = useState(movieData)
+  const [movies, setMovies] = useState([])
   console.log(movies)
 
   return (	
@@ -13,7 +13,7 @@ function App() {
 				<h1 className="text-[60px] text-blue-600">Scene It</h1>
         <p>Search for movies you want to watch!</p>
         <p>Save them to your list</p>
-        <SearchBar />
+        <SearchBar movies={movies} setMovies={setMovies}/>
         <MovieContainer movies={movies} />
         
 			</div>

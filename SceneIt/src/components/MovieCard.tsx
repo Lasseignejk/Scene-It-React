@@ -1,8 +1,11 @@
-import React from 'react'
-
 const MovieCard = ({movie}) => {
   return (
-    <div>MovieCard</div>
+    <div>
+      <h1>{movie.Title}</h1>
+      <img src={movie.Poster} alt="" />
+      <p>{movie.Year}</p>
+      <button>Add!</button>
+    </div>
   )
 }
 

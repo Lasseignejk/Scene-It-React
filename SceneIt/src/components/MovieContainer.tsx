@@ -1,10 +1,9 @@
-import React from 'react'
 import MovieCard from './MovieCard'
 
-const MovieContainer = ({movieData}) => {
+const MovieContainer = ({movies}) => {
   return (
     <div>
-        {movieData.map((movie) => (
+        {movies?.map((movie) => (
             <MovieCard movie={movie} />
         ))}
     </div>
